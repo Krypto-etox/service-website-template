@@ -1,0 +1,73 @@
+ .site-footer {
+	padding-top: 70px;
+	padding-bottom: 30px;
+	font-size: 15px;
+	@include media-breakpoint-down(md) {
+		padding-top: 30px;
+	}
+	a {
+		color: $black;
+		&:hover {
+			color: $primary;
+		}
+	}
+	.widget {
+		margin-bottom: 30px;
+		h3 {
+			font-size: 16px;
+			font-weight: 700;
+			margin-bottom: 30px;
+		}
+
+		.social {
+			li {
+				display: inline-block;
+				a {
+					width: 50px;
+					height: 50px;
+					border-radius: 10px;
+					background: $light;
+					display: inline-block;
+					position: relative;
+					color: lighten($black, 0%);
+					span {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+					}
+					&:hover {
+						color: $primary;
+					}
+				}
+			}
+		}
+		.links {
+			li {
+				display: block;
+				margin-bottom: 10px;
+				a {
+					color: $black;
+					&:hover {
+						color: $primary;
+					}
+				}
+			}
+		}
+	}
+
+	.copyright {
+		position: relative;
+		padding-top: 40px;
+		margin-top: 40px;
+		&:before {
+			top: 0;
+			position: absolute;
+			left: 15px;
+			right: 15px;
+			content: "";
+			height: 1px;
+			background: lighten($dark, 70%);
+		}
+	}
+}

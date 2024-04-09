@@ -1,0 +1,26 @@
+/*
+* Template Name: Append
+* Template Author: Untree.co
+* Template License: https://creativecommons.org/licenses/by/3.0/
+* Author URI: https://untree.co/
+
+* Twitter: https://twitter.com/Untree_co
+* Facebook: https://web.facebook.com/Untree.co/
+*/
+
+@import "functions";
+@import "variables";
+@import "mixins";
+
+$primary: #e84545;
+$black: #000000;
+$white: #ffffff;
+$heading_color: #000839;
+$heading_light_color: rgba($heading_color, .5);
+$font-family: 'Montserrat', sans-serif;
+
+@import 'site-base';
+@import 'site-navbar';
+@import 'site-blocks';
+@import 'site-elements';
+@import 'site-footer';
